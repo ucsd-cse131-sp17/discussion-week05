@@ -30,7 +30,8 @@ our_code_starts_here:
   mov eax, 2
   mov [esp - 16], eax
   ; New esp
-  sub esp, 24
+  sub esp, 4
+  ; Change above to 'sub esp, 24' to get an error and trace with gdb
   jmp near f
 ; Return label
 temp_after_f_1:
